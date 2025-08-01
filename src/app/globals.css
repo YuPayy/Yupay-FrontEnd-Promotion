@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin: 0.5rem;
+  color: black;
+  font-weight: bold;
+}
+
+main {
+ 
+  margin: auto;
+}
+
+footer {
+  background-color: #eee;
+  padding: 0.5rem;
+  text-align: center;
+
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: black;
+}
+
+@keyframes drawLine {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.animate-draw-line {
+  animation: drawLine 0.8s ease-out forwards;
+}
