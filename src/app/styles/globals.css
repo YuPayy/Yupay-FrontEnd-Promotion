@@ -84,3 +84,19 @@ button:hover {
 .animate-draw-line {
   animation: drawLine 0.8s ease-out forwards;
 }
+
+@keyframes grow-line {
+  from {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.grow-line {
+  animation: grow-line 0.8s ease-out forwards;
+  transform-origin: top; /* atau center kalau dari tengah */
+}
