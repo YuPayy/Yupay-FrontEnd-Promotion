@@ -17,7 +17,7 @@ export default function SplitBillsEffect() {
     >
       <div className="relative w-full ">
         <div className="marquee flex whitespace-nowrap text-3xl sm:text-8xl font-extrabold">
-          <span className="text-gray-900">Split woiii&nbsp;</span>
+          <span className="text-gray-900">Split bills&nbsp;</span>
           <span className="text-gray-400">Stay chill&nbsp;</span>
           <span className="text-gray-900">Split bills&nbsp;</span>
           <span className="text-gray-400">Stay chill&nbsp;</span>
